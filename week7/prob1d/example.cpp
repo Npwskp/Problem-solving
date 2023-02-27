@@ -14,7 +14,7 @@ bool probcheck(int st,int xx){
   if(probe_check(st,tmp)){
     return probcheck(st,tmp);
   }
-  else if(probe_check((tmp+1),xx)){
+  else{
     return probcheck((tmp+1),xx);
   }
 }
