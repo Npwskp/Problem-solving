@@ -33,7 +33,7 @@ int main()
             max_idx = i;
         }
         connect[i] = idx;
-        //cout << i << " " << idx << "\n";
+        // cout << i << " " << idx << "\n";
     }
 
     cout << max_val << "\n";
@@ -43,12 +43,12 @@ int main()
         if (max_val == 0)
             break;
         ans.push_back(val[max_idx]);
-        //cout << max_idx << " " << connect[max_idx] << "\n";
+        // cout << max_idx << " " << connect[max_idx] << "\n";
         max_idx = connect[max_idx];
         max_val--;
     }
 
-    for (int i = ans.size()-1; i >= 0; i--)
+    for (int i = ans.size() - 1; i >= 0; i--)
     {
         cout << ans[i] << " ";
     }
